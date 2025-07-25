@@ -1,0 +1,161 @@
+/* --- ESTILOS GERAIS E HEADER --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+    line-height: 1.6;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dee2e6;
+}
+
+footer {
+    border-top: 1px solid #dee2e6;
+    border-bottom: none;
+    margin-top: 40px;
+    color: #6c757d;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h3 {
+    color: #212529;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* --- VISUALIZADOR NA PÁGINA --- */
+.portfolio-viewer {
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.main-image-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #e9ecef;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dee2e6;
+}
+
+#main-portfolio-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#main-portfolio-image:hover {
+    transform: scale(1.02);
+}
+
+.page-thumbnails {
+    display: flex;
+    gap: 10px;
+    padding: 10px 5px;
+    overflow-x: auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+.page-thumbnails img {
+    width: 120px;
+    height: 75px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 4px;
+    opacity: 0.6;
+    transition: all 0.2s ease-in-out;
+    border: 3px solid transparent;
+}
+
+.page-thumbnails img:hover {
+    opacity: 1;
+}
+
+.page-thumbnails img.active {
+    opacity: 1;
+    border-color: #007bff;
+    transform: scale(1.05);
+}
+
+
+/* --- LIGHTBOX (MODAL) --- */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.92);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content-wrapper {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-conteudo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.9); }
+    to { transform: scale(1); }
+}
+
+.lightbox-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 15px;
+    cursor: pointer;
+    user-select: none; /* Impede que o texto seja selecionado */
+    transition: background-color 0.2s ease;
+}
+
+.lightbox-btn:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.fechar {
+    top: 15px;
+    right: 25px;
+    font-size: 45px;
+    padding: 0 15px;
+    transform: none;
+}
+
+.anterior { left: 15px; }
+.proximo { right: 15px; }
