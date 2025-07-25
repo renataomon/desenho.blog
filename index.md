@@ -1,4 +1,4 @@
 ---
-title: Welcome to my blog
+title: RadioRunner's Curriculum For The Solo Artist - Exercícios
 ---
 
