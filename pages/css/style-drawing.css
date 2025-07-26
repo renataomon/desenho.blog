@@ -12,7 +12,7 @@ h3 { color: #212529; text-align: center; margin-bottom: 30px; }
 
 /* --- GALERIA DE MINIATURAS NA PÁGINA (Sem alterações) --- */
 .thumbnail-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 15px; }
-.thumbnail-gallery img { width: 100%; height: 100%; aspect-ratio: 1 / 1; object-fit: cover; cursor: pointer; border-radius: 8px; transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; border: 1px solid #dee2e6; }
+.thumbnail-gallery img { width: 100%; height: 100%; aspect-ratio: 1 / 1; object-fit: contain; cursor: pointer; border-radius: 8px; transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; border: 1px solid #dee2e6; }
 .thumbnail-gallery img:hover { transform: scale(1.05); box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
 
 /* --- LIGHTBOX (MODAL) --- */

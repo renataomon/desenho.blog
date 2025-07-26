@@ -64,7 +64,8 @@ footer {
 
     height: auto;
     aspect-ratio: 1 / 1; /* Mantém as imagens quadradas */
-    object-fit: cover;
+    /* object-fit: cover; */
+    object-fit: contain;
     border-radius: 8px;
     cursor: pointer;
     transition: transform 0.3s ease;

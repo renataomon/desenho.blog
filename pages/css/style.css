@@ -8,7 +8,7 @@ body {
 
 a {
     color: currentColor;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 .link {
@@ -36,11 +36,6 @@ header p {
     margin: 0.5rem 0 0;
     font-weight: bold;
 }
-
-/* header a p {
-    color: #3498db;
-    font-weight: bold;
-} */
 
 footer {
     margin-top: 2rem;
@@ -101,13 +96,6 @@ main {
     font-size: 0.95rem;
 }
 
-/* .done {
-    color:gray;
-} */
-
 .todo {
     color:#cccccc;
 }
-/* a { 
-   color: currentColor;
-}  */
