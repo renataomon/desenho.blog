@@ -58,7 +58,7 @@ footer {
 
 .galeria img {
     /* Definimos uma largura fixa, mas a imagem pode encolher se necessário */
-    width: 300px;
+    width: 200px;
     /* Garante que a imagem não ultrapasse a tela em dispositivos muito pequenos */
     max-width: 100%;
 
@@ -76,7 +76,7 @@ footer {
 }
 
 /* A Media Query para celular continua útil para ajustes finos */
-@media (max-width: 600px) {
+@media (max-width: 200px) {
     .galeria {
         gap: 10px;
         padding: 10px;
