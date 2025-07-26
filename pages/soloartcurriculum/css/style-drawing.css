@@ -64,7 +64,7 @@ h3 { color: #212529; text-align: center; margin-bottom: 30px; }
     background-color: rgba(0, 0, 0, 0.3);
 }
 .lightbox-thumbnails img {
-    height: 60px; /* Altura das miniaturas */
+    height: 50px; /* Altura das miniaturas */
     width: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
