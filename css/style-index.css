@@ -47,16 +47,22 @@ footer {
 
 /* Layout da galeria com CSS Grid */
 .galeria {
-    display: grid;
+    display: flex;
     /* Cria 3 colunas de tamanho igual. Mude o "3" se quiser mais ou menos colunas */
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px; /* Espaçamento entre as imagens */
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* grid-template-columns: (1fr 1fr); */
+    gap: 20px; /* Espaçamento entre as imagens */
     padding: 20px;
+    justify-content: center; /* Center columns horizontally */
+    align-content: center; /* Center rows vertically (if space allows) */
+    height: 300px; /* Example height for vertical centering to be visible */
 }
 
 .galeria img {
-    width: 100%; /* Faz a imagem ocupar toda a célula do grid */
-    height: 100%;
+    /* width: 80%; */ /* Faz a imagem ocupar toda a célula do grid */
+    /* height: 100%; */
+    width: auto;
+    height: 250px;
     object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
     border-radius: 5px;
     cursor: pointer;
