@@ -1,0 +1,59 @@
+/* Importar uma fonte legal do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Reset básico e estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header, footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dee2e6;
+}
+
+footer {
+    border-top: 1px solid #dee2e6;
+    border-bottom: none;
+    margin-top: 20px;
+    color: #6c757d;
+}
+
+/* Layout da galeria com CSS Grid */
+.galeria {
+    display: grid;
+    /* Cria 3 colunas de tamanho igual. Mude o "3" se quiser mais ou menos colunas */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Espaçamento entre as imagens */
+    padding: 20px;
+}
+
+.galeria img {
+    width: 100%; /* Faz a imagem ocupar toda a célula do grid */
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Design Responsivo: Em telas menores, mude para 1 ou 2 colunas */
+@media (max-width: 768px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .galeria {
+        grid-template-columns: 1fr; /* Uma única coluna em celulares */
+    }
+}

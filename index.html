@@ -4,58 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seu Nome - Portfólio de Desenho</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-index.css">
 </head>
 <body>
 
     <header>
         <h1>Meu Portfólio de Estudos</h1>
-        <p>Um lugar para documentar minha evolução no desenho.</p>
+        <p>Um lugar para documentar minha evolução no desenho</p>
+        <a href="pages/soloartcurriculum/soloartcurriculum.html">Solo Art Curriculum</a>
     </header>
 
+    <!-- <header>
+        <nav>
+            <h1><a href="/">Renato M.</a></h1>
+            <ul>
+                <li><a href="pages/soloartcurriculum/soloartcurriculum.html">Solo Art Curriculum</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header> -->
+
     <main>
+        <section id="hero">
+            <h2>Artista e Estudante de Desenho</h2>
+            <p>Bem-vindo ao meu espaço de estudos e criações.</p>
+        </section>
+
         <section id="portfolio">
-            <!-- <h3>Visualizador de Trabalhos</h3> -->
-
-            <div class="portfolio-viewer">
-                
-                <div class="main-image-container">
-                    <img src="images/desenho_1.png" alt="Desenho em destaque" id="main-portfolio-image">
+            <h3>Meus Estudos e Trabalhos</h3>
+            <div class="galeria">
+                <a href="pages/soloartcurriculum/soloartcurriculum.html">
+                    <img src="images/desenho_3.png" alt="Descrição do desenho 1">
+                </a>
+                <img src="images/desenho_4.png" alt="Descrição do desenho 2">
                 </div>
+        </section>
 
-                <div class="page-thumbnails">
-                    <img src="images/desenho_1.png" alt="Descrição do desenho 1">
-                    <img src="images/desenho_2.png" alt="Descrição do desenho 2">
-                    <img src="images/desenho_3.png" alt="Descrição do desenho 3">
-                    <img src="images/desenho_4.png" alt="Descrição do desenho 4">
-                    <img src="images/desenho_5.png" alt="Descrição do desenho 5">
-                    <img src="images/desenho_6.png" alt="Descrição do desenho 6">
-                    <img src="images/desenho_7.png" alt="Descrição do desenho 7">
-                    <img src="images/desenho_8.png" alt="Descrição do desenho 8">
-                    <img src="images/desenho_9.png" alt="Descrição do desenho 9">
-                    <img src="images/desenho_10.png" alt="Descrição do desenho 10">
-                    <img src="images/desenho_11.png" alt="Descrição do desenho 11">
-                    <img src="images/desenho_12.png" alt="Descrição do desenho 12">
-                </div>
-
-            </div>
+        <section id="sobre">
+            <h3>Sobre Mim</h3>
+            <p>Aqui você pode falar sobre sua jornada no desenho, suas inspirações...</p>
         </section>
     </main>
 
-    <footer>
+    <footer id="contato">
+        <p>Me encontre nas redes sociais ou envie um email!</p>
         <p>&copy; 2025 Seu Nome. Todos os direitos reservados.</p>
     </footer>
 
-    <div id="lightbox-modal" class="lightbox">
-        <span class="lightbox-btn fechar">&times;</span>
-        <span class="lightbox-btn anterior">&#10094;</span>
-        <span class="lightbox-btn proximo">&#10095;</span>
-        <div class="lightbox-content-wrapper">
-           <img class="lightbox-conteudo" id="lightbox-img">
-        </div>
-    </div>
-
     <script src="js/main.js"></script>
-
 </body>
 </html>

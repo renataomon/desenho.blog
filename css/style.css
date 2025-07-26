@@ -9,7 +9,7 @@ body {
 
 header, footer {
     text-align: center;
-    padding: 20px;
+    padding: 5px;
     background-color: #ffffff;
     border-bottom: 1px solid #dee2e6;
 }
@@ -17,12 +17,12 @@ header, footer {
 footer {
     border-top: 1px solid #dee2e6;
     border-bottom: none;
-    margin-top: 40px;
+    margin-top: 20px;
     color: #6c757d;
 }
 
 main {
-    padding: 20px;
+    padding: 10px;
 }
 
 h1, h3 {
