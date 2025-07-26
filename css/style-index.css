@@ -48,23 +48,24 @@ footer {
 /* Layout da galeria com CSS Grid */
 .galeria {
     display: flex;
-    /* Cria 3 colunas de tamanho igual. Mude o "3" se quiser mais ou menos colunas */
-    /* grid-template-columns: repeat(2, 1fr); */
-    /* grid-template-columns: (1fr 1fr); */
-    gap: 20px; /* Espaçamento entre as imagens */
+    /* ESSENCIAL: Permite que os itens quebrem para a linha de baixo */
+    flex-wrap: wrap;
+    /* A MÁGICA: Centraliza os itens horizontalmente em cada linha */
+    justify-content: center;
+    gap: 15px;
     padding: 20px;
-    justify-content: center; /* Center columns horizontally */
-    align-content: center; /* Center rows vertically (if space allows) */
-    height: 300px; /* Example height for vertical centering to be visible */
 }
 
 .galeria img {
-    /* width: 80%; */ /* Faz a imagem ocupar toda a célula do grid */
-    /* height: 100%; */
-    width: auto;
-    height: 250px;
-    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
-    border-radius: 5px;
+    /* Definimos uma largura fixa, mas a imagem pode encolher se necessário */
+    width: 300px;
+    /* Garante que a imagem não ultrapasse a tela em dispositivos muito pequenos */
+    max-width: 100%;
+
+    height: auto;
+    aspect-ratio: 1 / 1; /* Mantém as imagens quadradas */
+    object-fit: cover;
+    border-radius: 8px;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -73,15 +74,12 @@ footer {
     transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
 
-/* Design Responsivo: Em telas menores, mude para 1 ou 2 colunas */
-@media (max-width: 768px) {
+/* A Media Query para celular continua útil para ajustes finos */
+@media (max-width: 600px) {
     .galeria {
-        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
     }
-}
-
-@media (max-width: 480px) {
-    .galeria {
-        grid-template-columns: 1fr; /* Uma única coluna em celulares */
-    }
+    /* Não precisamos mais mudar o tamanho da imagem aqui, 
+       pois o flexbox e o max-width já cuidam disso. */
 }
