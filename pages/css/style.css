@@ -42,6 +42,14 @@ footer {
     font-size: 0.9rem;
 }
 
+.header-link {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    flex-basis: auto;
+}
+
 /* --- Conteúdo Principal e Grid --- */
 main {
     padding: 2rem;

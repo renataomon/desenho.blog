@@ -39,6 +39,14 @@ header p {
     font-weight: bold;
 }
 
+.header-link {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    flex-basis: auto;
+}
+
 footer {
     margin-top: 2rem;
     font-size: 0.9rem;
