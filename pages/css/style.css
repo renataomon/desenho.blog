@@ -107,3 +107,8 @@ main {
 .todo {
     color:#cccccc;
 }
+
+.small-text {
+    font-size: 10px;
+    vertical-align: middle;
+}
