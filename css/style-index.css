@@ -23,6 +23,11 @@ a:hover {
     text-decoration: underline;
 }
 
+.descricao {
+    text-align: center;
+    padding: 1rem;
+}
+
 header, footer {
     background-color: #2c3e50;
     color: #ecf0f1;
@@ -61,7 +66,7 @@ footer {
     /* A MÁGICA: Centraliza os itens horizontalmente em cada linha */
     justify-content: center;
     gap: 15px;
-    padding: 20px;
+    /* padding: 10px; */
 }
 
 .galeria img {
@@ -81,6 +86,13 @@ footer {
 
 .galeria img:hover {
     transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.galeria p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
 }
 
 /* A Media Query para celular continua útil para ajustes finos */
